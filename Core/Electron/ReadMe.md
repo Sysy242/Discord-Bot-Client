@@ -6,7 +6,7 @@ Connect to the future
 
 ---
 
-![HOW TO INSTALL]
+# HOW TO INSTALL
 - Download the code
 - Extract
 - Go to cmd
@@ -17,7 +17,7 @@ Connect to the future
 
 ---
 
-![HOW TO BUILD]
+# HOW TO BUILD
 - Type : npm run-script build
 - Wait
 - Go to Dist folder 
