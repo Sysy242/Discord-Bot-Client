@@ -1,0 +1,62 @@
+{
+	"name": "discord-bot-sysys",
+	"version": "1.0.0",
+	"description": "Discord Bot Client - login into discord with a bot token",
+	"main": "index.js",
+    "scripts": {
+		"start": "electron .",
+		"run": "electron .",
+		"build": "electron-builder build --win"
+    },
+	"keywords": [],
+	"author": {
+		"name": "Sysy's",
+		"email": "sysys.owo@gmail.com"
+	},
+	"repository": {
+		"url": "https://github.com/sysysysy242/Discord-Bot-Client"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^9.4.4",
+		"electron-builder": "^22.8.0"
+	},
+	"build": {
+		"mac": {
+			"category": "public.app-category.social-networking",
+			"target": [
+				"dmg",
+				"zip"
+			],
+			"icon": "buildResources/icon.png"
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb",
+				"rpm",
+				"freebsd",
+				"pacman",
+				"p5p",
+				"apk"
+			],
+			"icon": "buildResources/icon.png"
+		},
+		"win": {
+			"target": [
+				{
+					"target": "nsis",
+					"arch": [
+						"x64",
+						"ia32"
+					]
+				}
+			],
+			"icon": "buildResources/icon.png"
+		}
+	},
+	"dependencies": {
+		"btoa": "^1.2.1",
+		"node-fetch": "^2.6.0"
+	}
+}
